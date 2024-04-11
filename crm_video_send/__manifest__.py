@@ -17,5 +17,7 @@
         ],
     'external_dependencies': {
         'python': ['openai', 'requests', 'unidecode', 'googlesearch-python', 'openpyxl'],
-    }
+    },
+    'price': 49.99,
+    'currency': 'USD',
 }
