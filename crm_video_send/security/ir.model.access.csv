@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_video_sender,access_crm_video_sender,crm_video_send.model_crm_video_sender,base.group_user,1,1,1,1
+access_crm_video_sender_line,access_crm_video_sender_line,crm_video_send.model_crm_video_sender_line,base.group_user,1,1,1,1
+access_my_file_model,access_my_file_model,crm_video_send.model_my_file_model,base.group_user,1,1,1,1
+access_automated_cron,access_automated_cron,crm_video_send.model_automated_cron,base.group_user,1,1,1,1

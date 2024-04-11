@@ -1,0 +1,10 @@
+<odoo>
+    <!--Menu item-->
+    <record id="crm_minado" model="ir.ui.menu">
+        <field name="name">Minado</field>
+        <field name="parent_id" ref="crm.crm_menu_root"/>
+        <field name="action" ref="action_video_post"/>
+        <field name="sequence" eval="26"/>
+    </record>
+    
+</odoo>

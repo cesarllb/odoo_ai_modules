@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="my_file_model_form_view" model="ir.ui.view">
+        <field name="name">my.file.model.form</field>
+        <field name="model">my.file.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="file_attachment" widget="binary"/>
+                        <field name="file_type" widget="selection" options="{'csv': 'CSV', 'xlsx': 'Excel'}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
+

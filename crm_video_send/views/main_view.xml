@@ -1,0 +1,56 @@
+ <odoo>
+    <record id="view_form_post" model="ir.ui.view">
+        <field name="name">Videos Form View</field>
+        <field name="model">crm.video.sender</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="video_sender_action" type="object" string="Generar 5 videos y enviar" class="oe_highlight"/>
+                    <button name="email_sender_action" type="object" string="Generar emails y enviar" class="oe_highlight"/>
+                    <button name="upload_csv_action" type="object" string="Subir Excel o CSV" class="oe_highlight"/>
+                </header>
+                <sheet name="post_form">
+                    <notebook>
+                        <page string="Clientes a enviar">
+                            <field name="client_lines_ids">
+                                <tree editable="bottom">
+                                    <field name="video_post_id" invisible="1"/>
+                                    <field name="email"/>
+                                    <field name="company_name"/>
+                                    <field name="description"/>
+                                    <field name="is_processed"/>
+                                    <button name="record_video_sender_action" type="object" string="Enviar video" icon="fa-arrow-right" confirm="¿Estás seguro de querer enviar un video a este correo? Este proceso puede demorar varios minutos."/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="view_tree_post" model="ir.ui.view">
+        <field name="name">Post Tree View</field>
+        <field name="model">crm.video.sender</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="client_lines_ids"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_video_post" model="ir.actions.act_window">
+        <field name="name">Coleciones de empresas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">crm.video.sender</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Añadir cliente.
+            </p>
+        </field>
+    </record>
+
+</odoo>
