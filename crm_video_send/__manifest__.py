@@ -20,5 +20,5 @@
     },
     'price': 49.99,
     'currency': 'USD',
-    'images': ['img/main_screenshot.png']
+    'images': ['images/main_screenshot.png']
 }
